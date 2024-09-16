@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from dataclasses import dataclass
 import sys
 import csv
@@ -66,7 +66,7 @@ def make_card(line: Line, all_lines: list[Line]) -> Card:
     )
 
 def render_card(title: str, author: str, card: Card) -> str:
-    return f"# {title}\n{author}\n{card.context1}\n{card.context2}\n{{{{1::{card.line}}}}}"
+    return f"{title}\n{author}\n{card.context1}\n{card.context2}\n{{{{1::{card.line}}}}}"
 
 if __name__ == "__main__":
     main()
